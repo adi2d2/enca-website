@@ -21,6 +21,8 @@ const StyleReset = styled.span`
       -webkit-text-size-adjust: none;
       text-size-adjust: none;
       line-height: calc(1em + 0.5rem);
+      margin: 0;
+      padding: 0;
     }
 
     /* 
@@ -53,6 +55,9 @@ const StyleReset = styled.span`
     body {
       -webkit-font-smoothing: antialiased;
       font-variant-numeric: tabular-nums;
+
+      background-color: #12262b;
+      color: #f7feff;
     }
 
     /* Improve media defaults */

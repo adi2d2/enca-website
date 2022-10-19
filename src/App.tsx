@@ -4,14 +4,15 @@ import { GlobalStyles } from 'src/shared'
 
 export const App = () => {
   return (
-    <>
+    <Main>
       <GlobalStyles />
-      <Heading>Hello</Heading>
-    </>
+      <h2>Hello from Enca Scientific</h2>
+    </Main>
   )
 }
 
-const Heading = styled.h2`
-  color: black;
-  border: none;
+const Main = styled.main`
+  width: 100%;
+  height: 100vh;
+  background-color: #12262b;
 `
