@@ -1,3 +1,17 @@
+import { styled } from '@linaria/atomic'
+
+import { GlobalStyles } from 'src/shared'
+
 export const App = () => {
-  return <h2>Hello</h2>
+  return (
+    <>
+      <GlobalStyles />
+      <Heading>Hello</Heading>
+    </>
+  )
 }
+
+const Heading = styled.h2`
+  color: black;
+  border: none;
+`
