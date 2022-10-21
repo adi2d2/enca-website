@@ -19,12 +19,12 @@ export const App = () => {
 
 const Main = styled.main`
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   overflow: auto;
   background-color: #12262b;
   scroll-snap-type: y mandatory;
 
-  @supports (min-height: 100svh) {
-    min-height: 100svh;
+  @supports (height: 100svh) {
+    height: 100svh;
   }
 `
