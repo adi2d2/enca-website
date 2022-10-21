@@ -58,6 +58,8 @@ const StyleReset = styled.span`
 
       background-color: #12262b;
       color: #f7feff;
+
+      /* scroll-snap-type: y mandatory; */
     }
 
     /* Improve media defaults */
