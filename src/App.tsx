@@ -19,7 +19,7 @@ export const App = () => {
 
 const Main = styled.main`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   overflow: auto;
   background-color: #12262b;
   scroll-snap-type: y mandatory;
