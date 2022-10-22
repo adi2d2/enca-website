@@ -1,10 +1,6 @@
-import { styled } from '@linaria/react'
+import { css } from '@linaria/core'
 
-export const GlobalStyles = () => {
-  return <StyleReset hidden id="style-reset" />
-}
-
-const StyleReset = styled.span`
+export const globalStyles = css`
   :global() {
     /*
     Shamelessly inspired (stolen) Josh's Custom CSS Reset ;-) 

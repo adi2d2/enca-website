@@ -1,19 +1,16 @@
-import { styled } from '@linaria/react'
+import { styled } from '@linaria/atomic'
 
-import { GlobalStyles, Section } from 'src/shared'
+import { globalStyles, Section } from 'src/shared'
 
 export const App = () => {
   return (
-    <>
-      <GlobalStyles />
-      <Main>
-        <Section>First Section</Section>
-        <Section>Second Section</Section>
-        <Section>Third Section</Section>
-        <Section>Fourth Section</Section>
-        <Section>Fifth Section</Section>
-      </Main>
-    </>
+    <Main className={globalStyles}>
+      <Section>First Section</Section>
+      <Section>Second Section</Section>
+      <Section>Third Section</Section>
+      <Section>Fourth Section</Section>
+      <Section>Fifth Section</Section>
+    </Main>
   )
 }
 

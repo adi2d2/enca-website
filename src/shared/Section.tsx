@@ -1,5 +1,5 @@
 import { FC, PropsWithChildren } from 'react'
-import { styled } from '@linaria/react'
+import { styled } from '@linaria/atomic'
 
 export const Section: FC<PropsWithChildren> = ({ children }) => {
   return <SectionWrapper>{children}</SectionWrapper>
