@@ -97,5 +97,35 @@ export const globalStyles = css`
       isolation: isolate;
       height: 100%;
     }
+
+    :root {
+      --color-dark1: #12262b;
+      --color-dark2: #234c4d;
+      --color-mid1: #447f7e;
+      --color-mid2: #67a59c;
+      --color-green: #00dbb6;
+      --color-blue: #009ca8;
+      --color-light: #f7fef;
+
+      --font-size-1: 14px;
+      --font-size-2: 16px;
+      --font-size-3: 18px;
+      --font-size-4: 22px;
+      --font-size-5: 26px;
+      --font-size-6: 32px;
+      --font-size-7: 38px;
+      --font-size-8: 48px;
+      --font-size-9: 58px;
+
+      --spacing-1: 4px;
+      --spacing-2: 8px;
+      --spacing-3: 12px;
+      --spacing-4: 16px;
+      --spacing-5: 20px;
+      --spacing-6: 24px;
+      --spacing-7: 30px;
+      --spacing-8: 36px;
+      --spacing-9: 42px;
+    }
   }
 `

@@ -1,20 +1,19 @@
-import { FC, PropsWithChildren } from 'react'
 import { styled } from '@linaria/atomic'
 
-export const Section: FC<PropsWithChildren> = ({ children }) => {
-  return <SectionWrapper>{children}</SectionWrapper>
-}
-
-const SectionWrapper = styled.section`
+export const Section = styled.section`
   width: 100%;
   min-height: 100vh;
   scroll-snap-align: start;
-  border: 1px solid red;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
   box-sizing: border-box;
 
+  /* Temporary */
+  border: 1px solid red;
+
+  /* svh works for FF, Safari right now, not */
   @supports (min-height: 100svh) {
     min-height: 100svh;
   }

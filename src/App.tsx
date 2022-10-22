@@ -1,11 +1,17 @@
 import { styled } from '@linaria/atomic'
 
 import { globalStyles, Section } from 'src/shared'
+import { TextDemo } from './shared/TextDemo'
 
 export const App = () => {
   return (
     <Main className={globalStyles}>
-      <Section>First Section</Section>
+      <Section>
+        First Section
+        <div>
+          <TextDemo />
+        </div>
+      </Section>
       <Section>Second Section</Section>
       <Section>Third Section</Section>
       <Section>Fourth Section</Section>
