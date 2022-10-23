@@ -2,6 +2,9 @@ import { FC, PropsWithChildren, ComponentPropsWithoutRef } from 'react'
 import { styled, CSSProperties } from '@linaria/atomic'
 
 const StyledStack = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+
   /* DIRECTION variations - inherited by default */
   &[data-direction='row'] {
     flex-direction: row;
@@ -81,7 +84,7 @@ interface StackProps
   extends PropsWithChildren<ComponentPropsWithoutRef<'div'>> {
   align?: CSSProperties['align-items']
   justify?: CSSProperties['justify-content']
-  direction: CSSProperties['flex-direction']
+  direction?: CSSProperties['flex-direction']
   gap?: '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
 }
 

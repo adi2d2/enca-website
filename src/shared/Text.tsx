@@ -2,6 +2,8 @@ import { FC, PropsWithChildren, ComponentPropsWithoutRef } from 'react'
 import { css } from '@linaria/atomic'
 
 const textCss = css`
+  margin: 0;
+
   /* ALIGNMENT variations - inherited(left) by default */
   &[data-align='left'] {
     text-align: left;
@@ -14,6 +16,9 @@ const textCss = css`
   }
 
   /* WEIGHT variations, inherited by default */
+  &[data-weight='thin'] {
+    font-weight: 200;
+  }
   &[data-weight='normal'] {
     font-weight: 400;
   }
@@ -54,6 +59,9 @@ const textCss = css`
   &[data-color='light'] {
     color: var(--color-light);
   }
+  &[data-color='secondary'] {
+    color: var(--color-secondary);
+  }
   &[data-color='green'] {
     color: var(--color-green);
   }
@@ -65,6 +73,12 @@ const textCss = css`
   }
   &[data-color='mid2'] {
     color: var(--color-mid2);
+  }
+  &[data-color='dark1'] {
+    color: var(--color-dark1);
+  }
+  &[data-color='dark2'] {
+    color: var(--color-dark2);
   }
 
   /* TRANSFORM variations, inherited (normal) by default */
@@ -79,9 +93,17 @@ const textCss = css`
 interface TextProps
   extends PropsWithChildren<ComponentPropsWithoutRef<'span'>> {
   align?: 'left' | 'center' | 'right'
-  weight?: 'normal' | 'bold'
+  weight?: 'thin' | 'normal' | 'bold'
   size?: '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
-  color?: 'light' | 'green' | 'blue' | 'mid1' | 'mid2'
+  color?:
+    | 'light'
+    | 'green'
+    | 'blue'
+    | 'mid1'
+    | 'mid2'
+    | 'secondary'
+    | 'dark1'
+    | 'dark2'
   transform?: 'normal' | 'uppercase'
 }
 

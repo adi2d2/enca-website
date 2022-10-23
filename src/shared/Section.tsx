@@ -7,9 +7,6 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
 
-  /* Temporary */
-  border: 1px solid red;
-
   /* svh works for FF, Safari right now, not */
   @supports (min-height: 100svh) {
     min-height: 100svh;

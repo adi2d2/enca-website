@@ -1,0 +1,6 @@
+export * from './ContactSection'
+export * from './IntroSection'
+export * from './PartnersSection'
+export * from './ProductSection'
+export * from './TeamSection'
+export * from './WhatWeOfferSection'
