@@ -2,6 +2,7 @@ import { styled } from '@linaria/atomic'
 
 import { globalStyles, Section } from 'src/shared'
 import { Button } from './shared/Button'
+import { Input } from './shared/Input'
 import { TextDemo } from './shared/TextDemo'
 
 export const App = () => {
@@ -16,6 +17,7 @@ export const App = () => {
       <Section>
         Second Section
         <div>
+          <Input emphasys="fill" type="text" placeholder="Email" />
           <Button>Aloha</Button>
         </div>
       </Section>
