@@ -1,14 +1,6 @@
-import { styled } from '@linaria/atomic'
+import styled from '@emotion/styled'
 
-import {
-  HStack,
-  Section,
-  Card,
-  Heading,
-  Paragraph,
-  VStack,
-  Icon
-} from 'src/shared'
+import { Section, Card, Heading, Paragraph, VStack } from '../shared'
 
 export const ProductSection = () => {
   return (
@@ -17,11 +9,13 @@ export const ProductSection = () => {
         <Heading size="7" align="center" weight="thin">
           Microfluidics-based droplet generator for microencapsulation
         </Heading>
+
         <Paragraph align="center">
           We aim to make the microencapsulation process more sustainable by
           employing a microfluidics-based droplet generating technology leading
           to:
         </Paragraph>
+
         <CardWrapper>
           <Card
             icon="egg"

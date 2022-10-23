@@ -5,7 +5,7 @@ import {
   TeamSection,
   PartnersSection,
   ContactSection
-} from 'src/sections'
+} from '../sections'
 
 export const HomePage = () => {
   return (

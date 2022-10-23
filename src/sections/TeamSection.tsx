@@ -1,6 +1,6 @@
-import { styled } from '@linaria/atomic'
+import styled from '@emotion/styled'
 
-import { Section, Heading, VStack, AvatarList } from 'src/shared'
+import { Section, Heading, VStack, AvatarList } from '../shared'
 
 import jonahAvatarUrl from '../assets/jonah.png'
 import andreeaAvatarUrl from '../assets/andreea.png'

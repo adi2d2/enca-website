@@ -1,5 +1,10 @@
-import { FC, PropsWithChildren, ComponentPropsWithoutRef } from 'react'
-import { styled, CSSProperties } from '@linaria/atomic'
+import {
+  FC,
+  PropsWithChildren,
+  ComponentPropsWithoutRef,
+  CSSProperties
+} from 'react'
+import styled from '@emotion/styled'
 
 const StyledStack = styled.div`
   display: flex;
@@ -82,9 +87,9 @@ const StyledStack = styled.div`
 
 interface StackProps
   extends PropsWithChildren<ComponentPropsWithoutRef<'div'>> {
-  align?: CSSProperties['align-items']
-  justify?: CSSProperties['justify-content']
-  direction?: CSSProperties['flex-direction']
+  align?: CSSProperties['alignItems']
+  justify?: CSSProperties['justifyContent']
+  direction?: CSSProperties['flexDirection']
   gap?: '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
 }
 

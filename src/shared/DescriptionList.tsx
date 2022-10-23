@@ -1,5 +1,5 @@
 import { ComponentPropsWithoutRef, FC } from 'react'
-import { styled } from '@linaria/atomic'
+import styled from '@emotion/styled'
 
 import { Heading, Paragraph } from './Text'
 import { Icon } from './Icon'
@@ -22,7 +22,7 @@ export const DescriptionList: FC<DescriptionListProps> = ({
   return (
     <div {...otherProps}>
       {items.map(({ icon, title, content }) => (
-        <Item>
+        <Item key={title}>
           {icon ? <ItemIcon icon={icon} /> : null}
           <VStack gap="2">
             <Heading transform="uppercase" color="green" size="2">

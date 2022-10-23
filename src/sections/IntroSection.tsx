@@ -1,6 +1,6 @@
-import { styled } from '@linaria/atomic'
+import styled from '@emotion/styled'
 
-import { Section, Heading, Paragraph, VStack, Button } from 'src/shared'
+import { Section, Heading, Paragraph, VStack, Button } from '../shared'
 
 export const IntroSection = () => {
   return (

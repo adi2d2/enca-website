@@ -1,11 +1,14 @@
-import { styled } from '@linaria/atomic'
+import styled from '@emotion/styled'
+import { Global, css } from '@emotion/react'
 
 import { globalStyles } from './shared'
+
 import { HomePage } from './pages'
 
 export const App = () => {
   return (
-    <Main className={globalStyles}>
+    <Main>
+      <Global styles={globalStyles} />
       <HomePage />
     </Main>
   )

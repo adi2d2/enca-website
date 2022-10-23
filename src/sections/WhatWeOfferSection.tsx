@@ -1,12 +1,6 @@
-import { styled } from '@linaria/atomic'
+import styled from '@emotion/styled'
 
-import {
-  Section,
-  Heading,
-  Paragraph,
-  VStack,
-  DescriptionList
-} from 'src/shared'
+import { Section, Heading, Paragraph, VStack, DescriptionList } from '../shared'
 
 export const WhatWeOfferSection = () => {
   return (

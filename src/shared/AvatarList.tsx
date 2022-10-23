@@ -1,5 +1,5 @@
 import { ComponentPropsWithoutRef, FC } from 'react'
-import { styled } from '@linaria/atomic'
+import styled from '@emotion/styled'
 
 import { Heading, Paragraph } from './Text'
 import { VStack } from './Stack'
@@ -19,7 +19,7 @@ export const AvatarList: FC<AvatarListProps> = ({ avatars, ...otherProps }) => {
   return (
     <AvatarGrid {...otherProps}>
       {avatars.map(({ imageUrl, name, position, description }) => (
-        <VStack gap="3" align="center">
+        <VStack gap="3" align="center" key={name}>
           <AvatarImage src={imageUrl} alt={`${name} - ${position}`} />
           <VStack gap="1" align="center">
             <Heading size="2">{name}</Heading>

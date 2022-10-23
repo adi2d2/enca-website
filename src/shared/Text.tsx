@@ -1,5 +1,5 @@
 import { FC, PropsWithChildren, ComponentPropsWithoutRef } from 'react'
-import { css } from '@linaria/atomic'
+import { css } from '@emotion/react'
 
 const textCss = css`
   margin: 0;
@@ -124,7 +124,8 @@ export const Text: FC<TextProps> = ({
       data-size={size}
       data-color={color}
       data-transform={transform}
-      className={textCss + ' ' + className}
+      className={className}
+      css={textCss}
       {...otherProps}
     >
       {children}
@@ -149,7 +150,8 @@ export const Paragraph: FC<TextProps> = ({
       data-size={size}
       data-color={color}
       data-transform={transform}
-      className={textCss + ' ' + className}
+      className={className}
+      css={textCss}
       {...otherProps}
     >
       {children}
@@ -174,7 +176,8 @@ export const Heading: FC<TextProps> = ({
       data-size={size}
       data-color={color}
       data-transform={transform}
-      className={textCss + ' ' + className}
+      className={className}
+      css={textCss}
       {...otherProps}
     >
       {children}

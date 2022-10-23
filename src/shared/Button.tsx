@@ -1,5 +1,5 @@
 import { FC, PropsWithChildren, ComponentPropsWithoutRef } from 'react'
-import { styled } from '@linaria/atomic'
+import styled from '@emotion/styled'
 
 interface ButtonProps
   extends PropsWithChildren<ComponentPropsWithoutRef<'button'>> {

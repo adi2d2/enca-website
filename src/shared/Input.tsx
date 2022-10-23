@@ -1,5 +1,5 @@
-import { FC, PropsWithChildren, ComponentPropsWithoutRef } from 'react'
-import { styled } from '@linaria/atomic'
+import { FC, ComponentPropsWithoutRef } from 'react'
+import styled from '@emotion/styled'
 
 interface InputProps extends ComponentPropsWithoutRef<'input'> {
   emphasys?: 'outline' | 'fill'

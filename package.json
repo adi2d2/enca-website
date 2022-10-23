@@ -8,22 +8,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@linaria/atomic": "^4.1.5",
-    "@linaria/babel-preset": "^4.2.2",
-    "@linaria/core": "^4.1.4",
-    "@linaria/react": "^4.1.5",
-    "@linaria/rollup": "^4.1.5",
-    "@linaria/shaker": "^4.2.2",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@emotion/babel-plugin": "^11.10.2",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
     "prettier": "^2.7.1",
     "typescript": "^4.6.4",
     "vite": "^3.1.0",
-    "vite-tsconfig-paths": "^3.5.1"
+    "vite-tsconfig-paths": "^3.5.2"
   }
 }
