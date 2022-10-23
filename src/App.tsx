@@ -18,7 +18,8 @@ const Main = styled.main`
   width: 100%;
   height: 100vh;
   overflow: auto;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
+  scroll-margin-block: 500px;
 
   @supports (height: 100svh) {
     height: 100svh;
