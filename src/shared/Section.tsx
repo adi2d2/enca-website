@@ -6,9 +6,6 @@ export const Section = styled.section`
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
-  box-sizing: border-box;
 
   /* Temporary */
   border: 1px solid red;

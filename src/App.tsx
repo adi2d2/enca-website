@@ -1,6 +1,7 @@
 import { styled } from '@linaria/atomic'
 
 import { globalStyles, Section } from 'src/shared'
+import { Button } from './shared/Button'
 import { TextDemo } from './shared/TextDemo'
 
 export const App = () => {
@@ -12,7 +13,12 @@ export const App = () => {
           <TextDemo />
         </div>
       </Section>
-      <Section>Second Section</Section>
+      <Section>
+        Second Section
+        <div>
+          <Button>Aloha</Button>
+        </div>
+      </Section>
       <Section>Third Section</Section>
       <Section>Fourth Section</Section>
       <Section>Fifth Section</Section>

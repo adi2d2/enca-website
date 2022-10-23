@@ -21,6 +21,13 @@ export const globalStyles = css`
       padding: 0;
     }
 
+    /* Everything border-box */
+    *,
+    *::before,
+    *:after {
+      box-sizing: border-box;
+    }
+
     /* 
   Fonts standardization
   - macOS 10.11-10.12 --> -apple-system
