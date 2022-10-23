@@ -19,7 +19,6 @@ const Main = styled.main`
   height: 100vh;
   overflow: auto;
   scroll-snap-type: y mandatory;
-  scroll-margin-block: 500px;
 
   @supports (height: 100svh) {
     height: 100svh;
