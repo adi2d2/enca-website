@@ -9,7 +9,7 @@ export const ContactForm = () => {
       <input
         type="hidden"
         name="access_key"
-        value="7d3f9203-e56a-4b40-b92c-c60e71ebfd2d"
+        value="cd396e1b-515b-4f88-880c-9ecbab5334f3"
       />
       <Label>
         <Paragraph size="1">Full name</Paragraph>
