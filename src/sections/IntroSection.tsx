@@ -6,7 +6,7 @@ export const IntroSection = () => {
   return (
     <StyledSection id="intro">
       <Ball />
-      <VStack gap="3" align="center">
+      <StyledVStack gap="3" align="center">
         <Heading size="9" align="center" weight="thin" color="light">
           <strong>Enca</strong> Scientific
         </Heading>
@@ -18,7 +18,7 @@ export const IntroSection = () => {
         <StyledButton emphasys="outline" href="#product">
           Learn More
         </StyledButton>
-      </VStack>
+      </StyledVStack>
     </StyledSection>
   )
 }
@@ -49,8 +49,13 @@ const Ball = styled.div`
   }
 `
 
-const StyledSection = styled(Section)`
+const StyledVStack = styled(VStack)`
   width: 92%;
+  margin: 0 auto;
+`
+
+const StyledSection = styled(Section)`
+  width: 100%;
   margin: 0 auto;
   justify-content: center;
   overflow: hidden;
