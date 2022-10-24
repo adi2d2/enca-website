@@ -6,6 +6,7 @@ import {
   PartnersSection,
   ContactSection
 } from '../sections'
+import { Footer } from '../shared'
 
 export const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ export const HomePage = () => {
       <TeamSection />
       <PartnersSection />
       <ContactSection />
+      <Footer />
     </>
   )
 }
