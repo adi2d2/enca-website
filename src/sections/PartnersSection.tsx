@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 
-import { Section, Heading, Paragraph, VStack, PartnerList } from '../shared'
+import { Section, Heading, VStack, PartnerList } from '../shared'
+
 import sdtaPartnerImageUrl from '../assets/sdta-partner.png'
 import aStarPartnerImageUrl from '../assets/a-star-partner.png'
 

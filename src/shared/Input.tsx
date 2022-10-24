@@ -1,4 +1,5 @@
 import { FC, ComponentPropsWithoutRef } from 'react'
+import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 
 interface InputProps extends ComponentPropsWithoutRef<'input'> {
@@ -12,15 +13,36 @@ export const Input: FC<InputProps> = ({
   ...otherProps
 }) => {
   return (
-    <StyledInput
+    <input
       data-emphasys={emphasys}
       data-full-width={fullWidth}
+      css={inputCss}
       {...otherProps}
     />
   )
 }
 
-const StyledInput = styled.input`
+interface TextareaProps extends ComponentPropsWithoutRef<'textarea'> {
+  emphasys?: 'outline' | 'fill'
+  fullWidth?: boolean
+}
+
+export const Textarea: FC<TextareaProps> = ({
+  emphasys = 'outline',
+  fullWidth,
+  ...otherProps
+}) => {
+  return (
+    <textarea
+      data-emphasys={emphasys}
+      data-full-width={fullWidth}
+      css={textareaCss}
+      {...otherProps}
+    />
+  )
+}
+
+const inputCss = css`
   all: unset;
   display: inline-flex;
   justify-content: center;
@@ -34,42 +56,61 @@ const StyledInput = styled.input`
 
   &[data-emphasys='outline'] {
     background-color: transparent;
-    color: var(--color-green);
-    border: 1px solid var(--color-green);
+    color: var(--color-light);
+    border: 1px solid var(--color-mid2);
 
     &:hover,
     &:focus {
-      background-color: var(--color-mid1);
+      background-color: var(--color-dark2);
+      border-color: var(--color-dark2);
       color: var(--color-light);
     }
     &:active {
-      background-color: var(--color-green);
-      color: var(--color-dark1);
+      background-color: var(--color-mid1);
+      color: var(--color-light);
     }
 
     &::placeholder {
-      color: var(--color-light);
+      color: var(--color-secondary);
     }
   }
   &[data-emphasys='fill'] {
-    background-color: var(--color-mid1);
+    background-color: var(--color-dark2);
     color: var(--color-light);
-    border: 1px solid var(--color-mid1);
+    border: 1px solid var(--color-dark2);
+
+    &::placeholder {
+      color: var(--color-mid2);
+    }
 
     &:hover,
     &:focus,
     &:active {
-      background-color: var(--color-mid2);
-      color: var(--color-dark1);
-      border: 1px solid var(--color-mid2);
-    }
+      background-color: var(--color-mid1);
+      border: 1px solid var(--color-mid1);
 
-    &::placeholder {
-      color: var(--color-dark1);
+      &::placeholder {
+        color: var(--color-secondary);
+      }
     }
   }
 
   &[data-full-width='true'] {
     width: 100%;
   }
+`
+
+const textareaCss = css`
+  ${inputCss}
+
+  min-height: 96px;
+
+  padding: 8px 16px;
+`
+
+export const Label = styled.label`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 `

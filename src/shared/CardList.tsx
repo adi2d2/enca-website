@@ -5,13 +5,27 @@ import { VStack } from './Stack'
 import { Heading, Paragraph } from './Text'
 import { Icon } from './Icon'
 
-interface CardProps {
+interface Card {
   icon?: string
   title: string
   content: string
 }
 
-export const Card: FC<CardProps> = ({ icon, title, content }) => {
+interface CardListProps {
+  cards: Card[]
+}
+
+export const CardList: FC<CardListProps> = ({ cards }) => {
+  return (
+    <CardGrid>
+      {cards.map(({ icon, title, content }) => (
+        <Card icon={icon} title={title} content={content} key={title} />
+      ))}
+    </CardGrid>
+  )
+}
+
+export const Card: FC<Card> = ({ icon, title, content }) => {
   return (
     <CardBox tabIndex={0}>
       {icon ? <CardIcon icon={icon} /> : null}
@@ -60,5 +74,16 @@ const CardBox = styled.div`
 
   @media all and (max-width: 768px) {
     padding: var(--spacing-5);
+  }
+`
+
+const CardGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  gap: var(--spacing-4);
+
+  @media all and (max-width: 640px) {
+    grid-template-columns: 1fr;
   }
 `

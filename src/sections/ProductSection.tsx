@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 
-import { Section, Card, Heading, Paragraph, VStack } from '../shared'
+import { Section, CardList, Heading, Paragraph, VStack } from '../shared'
 
 export const ProductSection = () => {
   return (
@@ -16,28 +16,32 @@ export const ProductSection = () => {
           to:
         </Paragraph>
 
-        <CardWrapper>
-          <Card
-            icon="egg"
-            title="EASILY CUSTOMIZABLE MICROCAPSULE DESIGN"
-            content="Device with multiple degrees of freedom that allow easy configuration changes for different microcapsules designs with high uniformity"
-          />
-          <Card
-            icon="snowing"
-            title="HIGH-THROUGHPUT DROPLET FLOW"
-            content="> 1000 droplets/s, depending on the reagents used"
-          />
-          <Card
-            icon="memory"
-            title="CHEAP AND STERILIZED MICROFLUIDIC CHIPS"
-            content="Reduced change-over downtime to <1 min."
-          />
-          <Card
-            icon="science"
-            title="REDUCED USAGE OF REAGENTS"
-            content="Microfluidic channels that allow the efficient usage of reagents for microcapsules formation"
-          />
-        </CardWrapper>
+        <CardList
+          cards={[
+            {
+              icon: 'egg',
+              title: 'EASILY CUSTOMIZABLE MICROCAPSULE DESIGN',
+              content:
+                'Device with multiple degrees of freedom that allow easy configuration changes for different microcapsules designs with high uniformity'
+            },
+            {
+              icon: 'snowing',
+              title: 'HIGH-THROUGHPUT DROPLET FLOW',
+              content: '> 1000 droplets/s, depending on the reagents used'
+            },
+            {
+              icon: 'memory',
+              title: 'CHEAP AND STERILIZED MICROFLUIDIC CHIPS',
+              content: 'Reduced change-over downtime to <1 min.'
+            },
+            {
+              icon: 'science',
+              title: 'REDUCED USAGE OF REAGENTS',
+              content:
+                'Microfluidic channels that allow the efficient usage of reagents for microcapsules formation'
+            }
+          ]}
+        />
       </VStack>
     </StyledSection>
   )
@@ -49,15 +53,4 @@ const StyledSection = styled(Section)`
   margin: 0 auto;
   justify-content: center;
   padding: 46px 0;
-`
-
-const CardWrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 1fr;
-  gap: var(--spacing-4);
-
-  @media all and (max-width: 640px) {
-    grid-template-columns: 1fr;
-  }
 `
