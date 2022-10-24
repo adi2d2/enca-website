@@ -8,6 +8,7 @@ interface Partner {
   imageUrl: string
   background: 'light' | 'dark'
   name: string
+  url: string
 }
 
 interface PartnerListProps extends ComponentPropsWithoutRef<'div'> {
@@ -20,8 +21,8 @@ export const PartnerList: FC<PartnerListProps> = ({
 }) => {
   return (
     <PartnerGrid {...otherProps}>
-      {partners.map(({ imageUrl, name, background }) => (
-        <UnstyledAnchor href="#" target="_blank">
+      {partners.map(({ imageUrl, name, background, url }) => (
+        <UnstyledAnchor href={url} target="_blank">
           <VStack gap="3" align="center" key={name}>
             <PartnerImage
               style={{ backgroundImage: `url(${imageUrl})` }}

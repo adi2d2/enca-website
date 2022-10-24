@@ -16,12 +16,14 @@ export const PartnersSection = () => {
             {
               imageUrl: sdtaPartnerImageUrl,
               name: 'Singapore Deep Tech Alliance',
-              background: 'dark'
+              background: 'dark',
+              url: 'https://sdta.sg/'
             },
             {
               imageUrl: aStarPartnerImageUrl,
               name: 'Agency for Science, Technology And Research',
-              background: 'light'
+              background: 'light',
+              url: 'https://www.a-star.edu.sg/'
             }
           ]}
         />
