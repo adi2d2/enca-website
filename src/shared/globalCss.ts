@@ -12,6 +12,7 @@ export const globalStyles = css`
     --color-blue: #009ca8;
     --color-secondary: #d8e6e8;
     --color-light: #f7feff;
+    --color-warning: #dbb600;
 
     --font-size-1: 14px;
     --font-size-2: 16px;

@@ -80,6 +80,9 @@ const textCss = css`
   &[data-color='dark2'] {
     color: var(--color-dark2);
   }
+  &[data-color='warning'] {
+    color: var(--color-warning);
+  }
 
   /* TRANSFORM variations, inherited (normal) by default */
   &[data-transform='normal'] {
@@ -104,6 +107,7 @@ interface TextProps
     | 'secondary'
     | 'dark1'
     | 'dark2'
+    | 'warning'
   transform?: 'normal' | 'uppercase'
 }
 
