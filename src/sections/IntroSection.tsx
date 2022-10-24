@@ -1,10 +1,10 @@
 import styled from '@emotion/styled'
 
-import { Section, Heading, Paragraph, VStack, Button } from '../shared'
+import { Section, Heading, Paragraph, VStack, AnchorButton } from '../shared'
 
 export const IntroSection = () => {
   return (
-    <StyledSection>
+    <StyledSection id="intro">
       <Ball />
       <VStack gap="3" align="center">
         <Heading size="9" align="center" weight="thin" color="light">
@@ -15,13 +15,15 @@ export const IntroSection = () => {
           <br />
           one droplet at a time
         </Paragraph>
-        <StyledButton emphasys="outline">Learn More</StyledButton>
+        <StyledButton emphasys="outline" href="#product">
+          Learn More
+        </StyledButton>
       </VStack>
     </StyledSection>
   )
 }
 
-const StyledButton = styled(Button)`
+const StyledButton = styled(AnchorButton)`
   margin-top: var(--spacing-7);
 `
 

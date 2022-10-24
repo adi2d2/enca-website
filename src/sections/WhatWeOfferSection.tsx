@@ -4,7 +4,7 @@ import { Section, Heading, Paragraph, VStack, DescriptionList } from '../shared'
 
 export const WhatWeOfferSection = () => {
   return (
-    <StyledSection>
+    <StyledSection id="what-we-offer">
       <Ball />
       <VStack gap="4">
         <Heading size="7" weight="thin">

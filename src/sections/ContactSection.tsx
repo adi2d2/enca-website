@@ -4,7 +4,7 @@ import { Section, Heading, Paragraph, VStack } from '../shared'
 
 export const ContactSection = () => {
   return (
-    <StyledSection>
+    <StyledSection id="contact">
       <VStack gap="3">
         <Heading size="7" align="center" weight="thin">
           Contact us

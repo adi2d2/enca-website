@@ -4,7 +4,7 @@ import { Section, Card, Heading, Paragraph, VStack } from '../shared'
 
 export const ProductSection = () => {
   return (
-    <StyledSection>
+    <StyledSection id="product">
       <VStack gap="3">
         <Heading size="7" align="center" weight="thin">
           Microfluidics-based droplet generator for microencapsulation

@@ -13,7 +13,7 @@ interface CardProps {
 
 export const Card: FC<CardProps> = ({ icon, title, content }) => {
   return (
-    <CardBox>
+    <CardBox tabIndex={0}>
       {icon ? <CardIcon icon={icon} /> : null}
       <VStack gap="4">
         <Heading size="3" weight="bold">
@@ -37,6 +37,7 @@ const CardBox = styled.div`
   border-radius: 6px;
   transition: color 0.3s, padding 0.3s, background-color 0.3s;
   padding: var(--spacing-7);
+  outline: none;
 
   &:hover,
   &:focus {
