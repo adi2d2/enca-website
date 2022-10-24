@@ -7,38 +7,40 @@ import logoUrl from '../assets/logo.png'
 
 export const Footer = () => {
   return (
-    <StyledFooter>
-      <Text color="mid2" size="1">
-        Copyright {new Date().getFullYear()} Enca Scientific.
-        <br />
-        All rights reserved
-      </Text>
-      <HStack justify="center">
-        <SoMeLink
-          href="https://www.linkedin.com/company/encascientific/about/"
-          target="_blank"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+    <Section>
+      <StyledFooter>
+        <Text color="mid2" size="1">
+          Copyright {new Date().getFullYear()} Enca Scientific.
+          <br />
+          All rights reserved
+        </Text>
+        <HStack justify="center">
+          <SoMeLink
+            href="https://www.linkedin.com/company/encascientific/about/"
+            target="_blank"
           >
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-            <rect x="2" y="9" width="4" height="12"></rect>
-            <circle cx="4" cy="4" r="2"></circle>
-          </svg>
-        </SoMeLink>
-      </HStack>
-      <HStack justify="end">
-        <Logo src={logoUrl} alt="Enca Scientific" />
-      </HStack>
-    </StyledFooter>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </SoMeLink>
+        </HStack>
+        <HStack justify="end">
+          <Logo src={logoUrl} alt="Enca Scientific" />
+        </HStack>
+      </StyledFooter>
+    </Section>
   )
 }
 
@@ -81,4 +83,22 @@ const StyledFooter = styled.footer`
       flex: 1;
     }
   }
+`
+
+const Section = styled.section`
+  background: radial-gradient(
+    circle at -20% 50%,
+    #234c4d,
+    #21484a,
+    #1f4547,
+    #1e4144,
+    #1c3e41,
+    #1a3a3e,
+    #19373b,
+    #173338,
+    #163035,
+    #152d31,
+    #13292e,
+    #12262b
+  );
 `
