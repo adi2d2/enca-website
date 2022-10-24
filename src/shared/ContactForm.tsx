@@ -7,7 +7,7 @@ import { HStack } from './Stack'
 import { Paragraph, Heading } from './Text'
 
 export const ContactForm = () => {
-  const formElementRef = useRef(null)
+  const formElementRef = useRef<HTMLFormElement>(null)
 
   const [status, setStatus] = useState({
     loading: false,
@@ -47,8 +47,9 @@ export const ContactForm = () => {
         loading: false,
         success: true
       })
-
-      formElementRef.current.reset()
+      if (formElementRef.current != null) {
+        formElementRef.current.reset()
+      }
     } else {
       setStatus({
         ...status,
