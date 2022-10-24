@@ -104,7 +104,6 @@ const textareaCss = css`
   ${inputCss}
 
   min-height: 96px;
-
   padding: 8px 16px;
 `
 

@@ -1,7 +1,6 @@
-import { Global, css } from '@emotion/react'
+import { css } from '@emotion/react'
 
 export const globalStyles = css`
-  /* :global() { */
   /* VARIABLES */
   :root {
     --color-dark1: #12262b;
@@ -138,5 +137,4 @@ export const globalStyles = css`
     isolation: isolate;
     height: 100%;
   }
-  /* } */
 `

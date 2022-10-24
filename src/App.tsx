@@ -1,8 +1,7 @@
 import styled from '@emotion/styled'
-import { Global, css } from '@emotion/react'
+import { Global } from '@emotion/react'
 
 import { globalStyles } from './shared'
-
 import { HomePage } from './pages'
 
 export const App = () => {

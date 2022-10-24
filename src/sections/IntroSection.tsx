@@ -50,7 +50,7 @@ const Ball = styled.div`
 `
 
 const StyledSection = styled(Section)`
-  width: 100%;
+  width: 92%;
   margin: 0 auto;
   justify-content: center;
   overflow: hidden;

@@ -1,7 +1,6 @@
 import styled from '@emotion/styled'
 
-import { Section, Heading, Paragraph, VStack } from '../shared'
-import { ContactForm } from '../shared/ContactForm'
+import { Section, Heading, VStack, ContactForm } from '../shared'
 
 export const ContactSection = () => {
   return (

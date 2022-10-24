@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 
 import { Text } from './Text'
+
 import logoUrl from '../assets/logo.png'
 
 export const Footer = () => {
