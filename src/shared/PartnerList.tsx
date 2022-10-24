@@ -28,7 +28,9 @@ export const PartnerList: FC<PartnerListProps> = ({
               style={{ backgroundImage: `url(${imageUrl})` }}
               data-background={background}
             />
-            <Heading size="2">{name}</Heading>
+            <Heading size="2" align="center">
+              {name}
+            </Heading>
           </VStack>
         </UnstyledAnchor>
       ))}

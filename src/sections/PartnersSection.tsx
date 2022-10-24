@@ -16,7 +16,7 @@ export const PartnersSection = () => {
           partners={[
             {
               imageUrl: sdtaPartnerImageUrl,
-              name: 'Singapore Deep Tech Alliance',
+              name: 'Singapore Deep-Tech Alliance',
               background: 'dark',
               url: 'https://sdta.sg/'
             },
