@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import { Global } from '@emotion/react'
+import { Analytics } from '@vercel/analytics/react'
 
 import { globalStyles } from './shared'
 import { HomePage } from './pages'
@@ -7,6 +8,7 @@ import { HomePage } from './pages'
 export const App = () => {
   return (
     <Main>
+      <Analytics />
       <Global styles={globalStyles} />
       <HomePage />
     </Main>
