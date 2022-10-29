@@ -20,21 +20,24 @@ export const TeamSection = () => {
               name: 'Jonah Wong',
               position: 'CEO',
               description:
-                '11 years of regional commercial experience in medtech and other industries'
+                '11 years of regional commercial experience in medtech and other industries',
+              avatarUrl: 'https://www.linkedin.com/in/jonahwong/'
             },
             {
               imageUrl: andreeaAvatarUrl,
-              name: 'Andreea Radulescu',
+              name: 'Andreea Radulescu, PhD',
               position: 'CTO',
               description:
-                'PhD in nanotechnology and 8 years of innovation research experience for commercialization'
+                'PhD in nanotechnology and 8 years of innovation research experience for commercialization',
+              avatarUrl: 'https://www.linkedin.com/in/andreea-radulescu/'
             },
             {
               imageUrl: adithyaAvatarUrl,
               name: 'Adithya Narayanan',
               position: 'CPO',
               description:
-                'Mechanical engineer with 13 years experience as owner of a product engineering firm'
+                'Mechanical engineer with 13 years experience as owner of a product engineering firm',
+              avatarUrl: 'https://www.linkedin.com/in/adi2d2/'
             }
           ]}
         />

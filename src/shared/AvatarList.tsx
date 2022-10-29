@@ -9,6 +9,7 @@ interface Avatar {
   name: string
   position: string
   description: string
+  avatarUrl: string
 }
 
 interface AvatarListProps extends ComponentPropsWithoutRef<'div'> {
@@ -18,19 +19,21 @@ interface AvatarListProps extends ComponentPropsWithoutRef<'div'> {
 export const AvatarList: FC<AvatarListProps> = ({ avatars, ...otherProps }) => {
   return (
     <AvatarGrid {...otherProps}>
-      {avatars.map(({ imageUrl, name, position, description }) => (
-        <VStack gap="3" align="center" key={name}>
-          <AvatarImage src={imageUrl} alt={`${name} - ${position}`} />
-          <VStack gap="1" align="center">
-            <Heading size="2">{name}</Heading>
-            <Heading transform="uppercase" color="mid2" size="1">
-              {position}
-            </Heading>
-            <Paragraph size="1" color="mid1" align="center">
-              {description}
-            </Paragraph>
+      {avatars.map(({ imageUrl, name, position, description, avatarUrl }) => (
+        <UnstyledAnchor href={avatarUrl} target="_blank">
+          <VStack gap="3" align="center" key={name}>
+            <AvatarImage src={imageUrl} alt={`${name} - ${position}`} />
+            <VStack gap="1" align="center">
+              <Heading size="2">{name}</Heading>
+              <Heading transform="uppercase" color="mid2" size="1">
+                {position}
+              </Heading>
+              <Paragraph size="1" color="mid1" align="center">
+                {description}
+              </Paragraph>
+            </VStack>
           </VStack>
-        </VStack>
+        </UnstyledAnchor>
       ))}
     </AvatarGrid>
   )
@@ -42,9 +45,25 @@ const AvatarImage = styled.img`
   background-color: var(--color-dark2);
   border-radius: 50%;
   overflow: hidden;
+  transition: background-color 0.3s;
 
   @media all and (max-width: 640px) {
     width: 75%;
+  }
+`
+
+const UnstyledAnchor = styled.a`
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+
+  &:hover ${AvatarImage}, &:focus ${AvatarImage} {
+    background-color: var(--color-dark1);
+  }
+
+  &:hover h3,
+  &:focus h3 {
+    color: var(--color-green);
   }
 `
 
