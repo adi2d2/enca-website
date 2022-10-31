@@ -15,12 +15,15 @@ export const Header = () => {
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen)
   }
+  const handleLogoToggle = () => {
+    setIsMenuOpen(false)
+  }
 
   return (
     <HeaderSection>
       <HeaderWrapper data-is-menu-open={isMenuOpen}>
         <HStack justify="space-between" align="center">
-          <LogoLink href="#intro" onClick={handleMenuToggle}>
+          <LogoLink href="#intro" onClick={handleLogoToggle}>
             <LogoImage src={logoUrl}></LogoImage>
           </LogoLink>
           <HeaderMenuButton onClick={handleMenuToggle}>
