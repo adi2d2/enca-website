@@ -6,11 +6,12 @@ import {
   PartnersSection,
   ContactSection
 } from '../sections'
-import { Footer } from '../shared'
+import { Header, Footer } from '../shared'
 
 export const HomePage = () => {
   return (
     <>
+      <Header />
       <IntroSection />
       <ProductSection />
       <WhatWeOfferSection />
