@@ -4,7 +4,7 @@ import {
   ComponentPropsWithoutRef,
   CSSProperties
 } from 'react'
-import styled from '@emotion/styled'
+import { styled } from '@linaria/atomic'
 
 const StyledStack = styled.div`
   display: flex;

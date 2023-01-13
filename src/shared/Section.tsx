@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import { styled } from '@linaria/atomic'
 
 export const Section = styled.section`
   width: 100%;

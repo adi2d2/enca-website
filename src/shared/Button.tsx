@@ -1,5 +1,5 @@
 import { FC, PropsWithChildren, ComponentPropsWithoutRef } from 'react'
-import { css } from '@emotion/react'
+import { cx, css } from '@linaria/core'
 
 interface ButtonProps
   extends PropsWithChildren<ComponentPropsWithoutRef<'button'>> {
@@ -11,13 +11,14 @@ export const Button: FC<ButtonProps> = ({
   children,
   emphasys = 'outline',
   fullWidth,
+  className,
   ...otherProps
 }) => {
   return (
     <button
       data-emphasys={emphasys}
       data-full-width={fullWidth}
-      css={buttonCss}
+      className={cx(buttonCss, className)}
       {...otherProps}
     >
       {children}
@@ -35,13 +36,14 @@ export const AnchorButton: FC<AnchorButtonProps> = ({
   children,
   emphasys = 'outline',
   fullWidth,
+  className,
   ...otherProps
 }) => {
   return (
     <a
       data-emphasys={emphasys}
       data-full-width={fullWidth}
-      css={buttonCss}
+      className={cx(buttonCss, className)}
       {...otherProps}
     >
       {children}

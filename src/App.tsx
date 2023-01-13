@@ -1,5 +1,5 @@
-import styled from '@emotion/styled'
-import { Global } from '@emotion/react'
+import { styled } from '@linaria/atomic'
+import { cx } from '@linaria/core'
 import { Analytics } from '@vercel/analytics/react'
 
 import { globalStyles } from './shared'
@@ -7,9 +7,8 @@ import { HomePage } from './pages'
 
 export const App = () => {
   return (
-    <Main>
+    <Main className={cx(globalStyles)}>
       <Analytics />
-      <Global styles={globalStyles} />
       <HomePage />
     </Main>
   )

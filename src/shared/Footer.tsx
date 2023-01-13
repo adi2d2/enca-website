@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import { styled } from '@linaria/atomic'
 
 import { Text } from './Text'
 import { HStack } from './Stack'

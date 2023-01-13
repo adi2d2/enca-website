@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import { styled } from '@linaria/atomic'
 
 import { Section, CardList, Heading, Paragraph, VStack } from '../shared'
 

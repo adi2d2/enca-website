@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import { styled } from '@linaria/atomic'
 import { useState } from 'react'
 
 import logoUrl from '../assets/logo.png'

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import { styled } from '@linaria/atomic'
 import { FormEvent, useState, useRef } from 'react'
 
 import { Button } from './Button'

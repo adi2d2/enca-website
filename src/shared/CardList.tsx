@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import styled from '@emotion/styled'
+import { styled } from '@linaria/atomic'
 
 import { VStack } from './Stack'
 import { Heading, Paragraph } from './Text'

@@ -1,6 +1,6 @@
 import { FC, ComponentPropsWithoutRef } from 'react'
-import { css } from '@emotion/react'
-import styled from '@emotion/styled'
+import { cx, css } from '@linaria/core'
+import { styled } from '@linaria/atomic'
 
 interface InputProps extends ComponentPropsWithoutRef<'input'> {
   emphasys?: 'outline' | 'fill'
@@ -10,13 +10,14 @@ interface InputProps extends ComponentPropsWithoutRef<'input'> {
 export const Input: FC<InputProps> = ({
   emphasys = 'outline',
   fullWidth,
+  className,
   ...otherProps
 }) => {
   return (
     <input
       data-emphasys={emphasys}
       data-full-width={fullWidth}
-      css={inputCss}
+      className={cx(inputCss, className)}
       {...otherProps}
     />
   )
@@ -30,13 +31,14 @@ interface TextareaProps extends ComponentPropsWithoutRef<'textarea'> {
 export const Textarea: FC<TextareaProps> = ({
   emphasys = 'outline',
   fullWidth,
+  className,
   ...otherProps
 }) => {
   return (
     <textarea
       data-emphasys={emphasys}
       data-full-width={fullWidth}
-      css={textareaCss}
+      className={cx(inputCss, textareaCss, className)}
       {...otherProps}
     />
   )
@@ -101,8 +103,6 @@ const inputCss = css`
 `
 
 const textareaCss = css`
-  ${inputCss}
-
   min-height: 96px;
   padding: 8px 16px;
 `
