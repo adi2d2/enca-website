@@ -40,7 +40,9 @@ export const AvatarList: FC<AvatarListProps> = ({ avatars, ...otherProps }) => {
 }
 
 const AvatarImage = styled.img`
-  width: 100%;
+  --width: 100%;
+
+  width: var(--width);
   aspect-ratio: 1/1;
   background-color: var(--color-dark2);
   border-radius: 50%;
@@ -48,7 +50,7 @@ const AvatarImage = styled.img`
   transition: background-color 0.3s;
 
   @media all and (max-width: 640px) {
-    width: 75%;
+    --width: 75%;
   }
 `
 

@@ -71,16 +71,19 @@ const HeaderSection = styled.section`
 `
 
 const HeaderWrapper = styled.header`
+  --direction: row;
+
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: var(--direction);
   justify-content: space-between;
   padding: 0 var(--spacing-3);
 
   @media all and (max-width: 680px) {
-    flex-direction: column;
+    --direction: column;
+
     transition: all 0.5;
     background-color: transparent;
 
@@ -108,14 +111,16 @@ const LogoLink = styled.a`
 `
 
 const NavMenu = styled.nav`
+  --direction: row;
+
   display: flex;
-  flex-direction: row;
+  flex-direction: var(--direction);
 
   transition: visibility 0s, opacity 0s, height 0s;
 
   @media all and (max-width: 680px) {
     height: 0;
-    flex-direction: column;
+    --direction: column;
     font-size: var(--font-size-6);
     visibility: hidden;
     opacity: 0;
