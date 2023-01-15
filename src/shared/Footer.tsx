@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import { styled } from '@linaria/atomic'
 
 import { Text } from './Text'
 import { HStack } from './Stack'
@@ -18,6 +18,7 @@ export const Footer = () => {
           <SoMeLink
             href="https://www.linkedin.com/company/encascientific/about/"
             target="_blank"
+            title="ENCA Scientific Linkedin profile"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

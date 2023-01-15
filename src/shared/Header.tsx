@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import { styled } from '@linaria/atomic'
 import { useState } from 'react'
 
 import logoUrl from '../assets/logo.png'
@@ -23,8 +23,8 @@ export const Header = () => {
     <HeaderSection>
       <HeaderWrapper data-is-menu-open={isMenuOpen}>
         <HStack justify="space-between" align="center">
-          <LogoLink href="#intro" onClick={handleLogoToggle}>
-            <LogoImage src={logoUrl}></LogoImage>
+          <LogoLink href="#intro" onClick={handleLogoToggle} title="Home">
+            <LogoImage src={logoUrl} alt="Logo"></LogoImage>
           </LogoLink>
           <HeaderMenuButton onClick={handleMenuToggle}>
             <Icon icon="menu" />
@@ -71,16 +71,19 @@ const HeaderSection = styled.section`
 `
 
 const HeaderWrapper = styled.header`
+  --direction: row;
+
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: var(--direction);
   justify-content: space-between;
   padding: 0 var(--spacing-3);
 
   @media all and (max-width: 680px) {
-    flex-direction: column;
+    --direction: column;
+
     transition: all 0.5;
     background-color: transparent;
 
@@ -108,14 +111,16 @@ const LogoLink = styled.a`
 `
 
 const NavMenu = styled.nav`
+  --direction: row;
+
   display: flex;
-  flex-direction: row;
+  flex-direction: var(--direction);
 
   transition: visibility 0s, opacity 0s, height 0s;
 
   @media all and (max-width: 680px) {
     height: 0;
-    flex-direction: column;
+    --direction: column;
     font-size: var(--font-size-6);
     visibility: hidden;
     opacity: 0;

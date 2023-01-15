@@ -1,5 +1,5 @@
 import { ComponentPropsWithoutRef, FC } from 'react'
-import styled from '@emotion/styled'
+import { styled } from '@linaria/atomic'
 
 import { Heading, Paragraph } from './Text'
 import { Icon } from './Icon'
