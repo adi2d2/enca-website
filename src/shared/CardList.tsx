@@ -63,7 +63,7 @@ const CardBox = styled.div`
   }
 
   p {
-    color: var(--color-mid2);
+    color: var(--color-secondary);
     transition: color 0.3s;
   }
 
