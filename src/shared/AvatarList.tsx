@@ -20,8 +20,8 @@ export const AvatarList: FC<AvatarListProps> = ({ avatars, ...otherProps }) => {
   return (
     <AvatarGrid {...otherProps}>
       {avatars.map(({ imageUrl, name, position, description, avatarUrl }) => (
-        <UnstyledAnchor href={avatarUrl} target="_blank">
-          <VStack gap="3" align="center" key={name}>
+        <UnstyledAnchor href={avatarUrl} target="_blank" key={name}>
+          <VStack gap="3" align="center">
             <AvatarImage src={imageUrl} alt={`${name} - ${position}`} />
             <VStack gap="1" align="center">
               <Heading size="2">{name}</Heading>

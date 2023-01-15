@@ -22,8 +22,8 @@ export const PartnerList: FC<PartnerListProps> = ({
   return (
     <PartnerGrid {...otherProps}>
       {partners.map(({ imageUrl, name, background, url }) => (
-        <UnstyledAnchor href={url} target="_blank">
-          <VStack gap="3" align="center" key={name}>
+        <UnstyledAnchor href={url} target="_blank" key={name}>
+          <VStack gap="3" align="center">
             <PartnerImage
               style={{ backgroundImage: `url(${imageUrl})` }}
               data-background={background}

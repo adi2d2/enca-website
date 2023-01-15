@@ -102,6 +102,7 @@ const HeaderWrapper = styled.header`
 
 const LogoImage = styled.img`
   width: 60px;
+  filter: drop-shadow(1px 1px 3px var(--color-dark2));
 `
 
 const LogoLink = styled.a`
