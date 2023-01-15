@@ -23,8 +23,8 @@ export const Header = () => {
     <HeaderSection>
       <HeaderWrapper data-is-menu-open={isMenuOpen}>
         <HStack justify="space-between" align="center">
-          <LogoLink href="#intro" onClick={handleLogoToggle}>
-            <LogoImage src={logoUrl}></LogoImage>
+          <LogoLink href="#intro" onClick={handleLogoToggle} title="Home">
+            <LogoImage src={logoUrl} alt="Logo"></LogoImage>
           </LogoLink>
           <HeaderMenuButton onClick={handleMenuToggle}>
             <Icon icon="menu" />
