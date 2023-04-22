@@ -8,7 +8,7 @@ import adithyaAvatarUrl from '../assets/adithya.png'
 export const TeamSection = () => {
   return (
     <StyledSection id="team">
-      <StyledVStack gap="9">
+      <StyledVStack gap="50">
         <Heading size="7" align="center" weight="thin">
           Meet <strong>Our Team</strong>
         </Heading>
