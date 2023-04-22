@@ -3,7 +3,6 @@ import { styled } from '@linaria/atomic'
 import { Section, Heading, VStack, AvatarList } from '../shared'
 
 import jonahAvatarUrl from '../assets/jonah.png'
-import andreeaAvatarUrl from '../assets/andreea.png'
 import adithyaAvatarUrl from '../assets/adithya.png'
 
 export const TeamSection = () => {
@@ -18,7 +17,7 @@ export const TeamSection = () => {
             {
               imageUrl: jonahAvatarUrl,
               name: 'Jonah Wong',
-              position: 'CEO',
+              position: 'Chief Executive Officer',
               description:
                 '11 years of regional commercial experience in medtech and other industries',
               avatarUrl: 'https://www.linkedin.com/in/jonahwong/'
@@ -27,7 +26,7 @@ export const TeamSection = () => {
             {
               imageUrl: adithyaAvatarUrl,
               name: 'Adithya Narayanan',
-              position: 'CPO',
+              position: 'Chief Technology Officer',
               description:
                 'Mechanical engineer with 13 years experience as owner of a product engineering firm',
               avatarUrl: 'https://www.linkedin.com/in/adi2d2/'
