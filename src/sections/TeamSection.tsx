@@ -23,14 +23,7 @@ export const TeamSection = () => {
                 '11 years of regional commercial experience in medtech and other industries',
               avatarUrl: 'https://www.linkedin.com/in/jonahwong/'
             },
-            {
-              imageUrl: andreeaAvatarUrl,
-              name: 'Andreea Radulescu, PhD',
-              position: 'CTO',
-              description:
-                'PhD in nanotechnology and 8 years of innovation research experience for commercialization',
-              avatarUrl: 'https://www.linkedin.com/in/andreea-radulescu/'
-            },
+            
             {
               imageUrl: adithyaAvatarUrl,
               name: 'Adithya Narayanan',
