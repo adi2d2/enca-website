@@ -4,7 +4,7 @@ import { Section, Heading, VStack, AvatarList } from '../shared'
 
 import jonahAvatarUrl from '../assets/jonah.png'
 import adithyaAvatarUrl from '../assets/adithya.png'
-import thcAvatarUrl from '../assets/THC.jpg'
+import thcAvatarUrl from '../assets/THC.png'
 
 export const TeamSection = () => {
   return (
@@ -23,8 +23,7 @@ export const TeamSection = () => {
                 '11 years of regional commercial experience in medtech and other industries',
               avatarUrl: 'https://www.linkedin.com/in/jonahwong/'
             },
-            
-            {
+             {
               imageUrl: adithyaAvatarUrl,
               name: 'Adithya Narayanan',
               position: 'Chief Technology Officer',
