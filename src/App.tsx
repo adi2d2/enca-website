@@ -11,7 +11,7 @@ export const App = () => {
       <Analytics />
       <HomePage />
     </Main>
-    <input type="hidden" name="apikey" value=process.env.REACT_APP_API_KEY>
+  
   )
 }
 
