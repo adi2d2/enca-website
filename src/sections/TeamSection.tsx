@@ -3,8 +3,8 @@ import { styled } from '@linaria/atomic'
 import { Section, Heading, VStack, AvatarList } from '../shared'
 
 import jonahAvatarUrl from '../assets/jonah.png'
-import adithyaAvatarUrl from '../assets/adithya.png'
 import thcAvatarUrl from '../assets/THC.png'
+import adithyaAvatarUrl from '../assets/adithya.png'
 
 export const TeamSection = () => {
   return (
@@ -23,14 +23,6 @@ export const TeamSection = () => {
                 '11 years of regional commercial experience in medtech and other industries',
               avatarUrl: 'https://www.linkedin.com/in/jonahwong/'
             },
-             {
-              imageUrl: adithyaAvatarUrl,
-              name: 'Adithya Narayanan',
-              position: 'Chief Technology Officer',
-              description:
-                'Mechanical engineer with 13 years experience as owner of a product engineering firm',
-              avatarUrl: 'https://www.linkedin.com/in/adi2d2/'
-            },
             {
               imageUrl: thcAvatarUrl,
               name: 'Tze Howe Charn',
@@ -38,6 +30,14 @@ export const TeamSection = () => {
               description:
                 'PhD Bioengineer, former lead scientist, current global R&D director in microfluidics company',
               avatarUrl: 'https://www.linkedin.com/in/tze-howe-charn-0a90393a/'
+            },
+            {
+              imageUrl: adithyaAvatarUrl,
+              name: 'Adithya Narayanan',
+              position: 'CPO',
+              description:
+                'Mechanical engineer with 13 years experience as owner of a product engineering firm',
+              avatarUrl: 'https://www.linkedin.com/in/adi2d2/'
             }
           ]}
         />
