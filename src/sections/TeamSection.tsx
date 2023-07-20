@@ -31,7 +31,7 @@ export const TeamSection = () => {
               description:
                 'Mechanical engineer with 13 years experience as owner of a product engineering firm',
               avatarUrl: 'https://www.linkedin.com/in/adi2d2/'
-            }
+            },
             {
               imageUrl: thcAvatarUrl,
               name: 'Tze Howe Charn',
